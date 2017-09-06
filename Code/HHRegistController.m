@@ -12,6 +12,9 @@
 #import "HHTextModel.h"
 
 
+
+
+
 @interface HHRegistController ()<UITableViewDelegate,UITableViewDataSource,HHTextFieldCellDelegate>
 
 @property (nonatomic,strong)UITableView *tbView;
@@ -19,6 +22,9 @@
 @property (nonatomic,strong)NSArray *dataArray;
 
 @property (nonatomic,strong)HHTextModel *textModel;
+
+
+
 
 @end
 
@@ -38,15 +44,22 @@
     width = [[UIScreen mainScreen]bounds].size.width;
     height = [[UIScreen mainScreen]bounds].size.height;
     
-    [self setupForDismissKeyboard];
+    //[self setupForDismissKeyboard];
+    
     
     [self initData];
     
     [self initSubViews];
     
     
+   
+    
+    
     
 }
+
+
+
 
 
 - (void)initData
